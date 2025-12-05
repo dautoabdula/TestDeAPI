@@ -27,7 +27,7 @@ describe('API PetStore Swagger - Entidade Pet', () => {
     it('GET Pet', () => {
         return request
             // .get('/pet/' + petId) // tradicional
-            .get(/pet/${petId})    // atual
+             .get(`/pet/${petId}`)     // atual
             .then((response) => {
                 console.log('Resposta Recebida:\n', response.body)
                 expect(response.statusCode).toBe(200)
@@ -53,7 +53,7 @@ describe('API PetStore Swagger - Entidade Pet', () => {
 
     it('DELETE Pet', () => {
         return request
-            .delete(/pet/${petId})
+            .delete(`/pet/${petId}`)
             .then((response) => {
                 expect(response.statusCode).toEqual(200)
                 expect(response.body.code).toEqual(200)
