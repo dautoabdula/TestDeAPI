@@ -1,0 +1,35 @@
+module.exports.array = [
+    {
+      "id": 1001,
+      "categoryid": 1,
+      "categoryname": "dog",
+      "name": "Snoopy",
+      "tag0id": 99,
+      "tag0name": "vacinado",
+      "tag1id": 100,
+      "tag1name": "beagle",
+      "status": "available"
+    },
+    {
+      "id": 1002,
+      "categoryid": 2,
+      "categoryname": "cat",
+      "name": "Garfield",
+      "tag0id": 99,
+      "tag0name": "vacinado",
+      "tag1id": 120,
+      "tag1name": "persian",
+      "status": "available"
+    },
+    {
+      "id": 1003,
+      "categoryid": 3,
+      "categoryname": "fish",
+      "name": "Nemo",
+      "tag0id": 88,
+      "tag0name": "vermifugado",
+      "tag1id": 130,
+      "tag1name": "clownfish",
+      "status": "available"
+    }
+  ]
