@@ -94,12 +94,12 @@ describe('API PetStore Swagger - Entidade Pet', () => {
         pet.id = id
         pet.categoryid = categoryid
         pet.categoryname = categoryname
-        pet.petname = petname
+        pet.name = petname
         pet.tags[0].id = tag0id
         pet.tags[0].name = tag0name
         pet.tags[1].id = tag1id
         pet.tags[1].name = tag1name
-        pet.etstatus = petstatus
+        pet.status = petstatus
 
         // Teste em si
         return request
@@ -110,7 +110,7 @@ describe('API PetStore Swagger - Entidade Pet', () => {
                 expect(response.body.id).toBe(id)
                 expect(response.body.name).toBe(petname)
                 expect(response.body.category.name).toBe(categoryname)
-                expect(response.body.tags[0].name).toBe('vacinado')
+                expect(response.body.tags[0].name).toBe(tags0name)
             })
 
     }) // Final do Post Pet DDT
